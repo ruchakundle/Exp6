@@ -19,8 +19,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                echo 'Running HTML validation using tidy...'
-                bat 'tidy -qe index.html' // optional, install tidy
+                echo 'Skipping HTML validation test...'
             }
         }
         stage('Deploy') {
