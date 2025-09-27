@@ -7,7 +7,8 @@ pipeline {
         stage('Checkout') {
             steps {
                 echo 'Cloning project from GitHub...'
-                git branch: 'main', url: 'https://github.com/<your-username>/Exp6.git'
+                git branch: 'main', url: 'https://github.com/ruchakundle/Exp6.git'
+
             }
         }
         stage('Build') {
